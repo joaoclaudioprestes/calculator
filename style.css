@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #EDF0F5;
+}
+
+#container {
+    background: #212B34;
+    border-radius: 10px;
+    min-width: 70vw;
+    max-width: 95vw;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 10px;
+    background: #212B34;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    height: 150px;
+}
+
+#calcule {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+#result {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    width: auto;
+    max-width: 100px;
+    overflow: scroll; 
+    word-wrap: wrap;
+}
+
+#main-numbers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px; 
+    background: #233036;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.btn {
+    min-width: 50px;
+    min-height: 60px;
+    border-radius: 5px;
+    border: 2px solid #212B34;
+    background: #222F38;
+    color: #fff;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.btnNumber:hover {
+    border: 2px solid #fff !important;
+    transition: .8s;
+}
+
+.btnOperator:hover {
+    border: 2px solid #FDAD10 !important;
+    transition: .8s;
+}
+
+#btnCalc {
+    grid-column: span 2;
+    width: 100%;
+    background: #FDAD10 !important;
+    color: #fff !important;
+}
+
+#clickBordButton {
+    background: #FDAD10;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;  
+    outline: none; 
+    cursor: pointer;
+}
+
+#clickBordButton:hover {
+    border: 1px solid #212B34 !important;
+    transition: .8s;
+    outline: none;
+}
+
+.btnOperator {
+    color: #FDAD10 !important;
+}
+
+.btnAction {
+    color: rgba(255, 85, 0, 0.907);
+}
+
+.btnAction:hover {
+    border: 2px solid rgba(255, 85, 0, 0.907) !important;
+    transition: .8s;
+}
+
